@@ -1,0 +1,27 @@
+<!--HTML para el componente tareas -->
+
+<br>
+<h3>Listado de Tareas</h3>
+<div  style="width:75%">
+<table class="table table-bordered table-striped">
+<thead>
+<tr class="filters">
+<th>id</th>
+<th>nombre</th>
+<th>estado</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let tarea of arrayTareas">           <!-- Mostrar todas las tareas usando este <tr> y sus <td> -->
+    <td>{{ tarea.id }}</td>
+    <td>{{ tarea.nombre }}</td>
+    <td>{{ tarea.estado }}</td>
+    <td class=text-center>
+        <button *ngIf="tarea.estado == 'Pendiente'" class="btn btn-danger" routerLink="/finalizarTarea/{{ tarea.id }}">Finalizar</button>
+    </td>
+</tr>
+</tbody>
+</table>
+<h4>Total Pendientes: {{ totalPendientes }}</h4>
+<h4>Total Realizadas: {{ totalRealizadas }}</h4>
+</div>

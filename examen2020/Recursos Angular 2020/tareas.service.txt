@@ -1,0 +1,24 @@
+// Listado de tareas para el servicio. Definir el tipo de datos adecuado de la lista de tareas
+
+  tareas: any = [ 
+    {
+    id:'1',
+    nombre: 'Examen Cliente',
+    estado: 'Pendiente'
+    },
+    {
+    id:'2',
+    nombre: 'Examen Servidor',
+    estado: 'Pendiente'
+    },
+    {
+    id:'3',
+    nombre: 'Examen Interfaces',
+    estado: 'Realizada'
+    },
+    {
+    id:'4',
+    nombre: 'Examen Despliegue',
+    estado: 'Pendiente'
+    }
+    ]

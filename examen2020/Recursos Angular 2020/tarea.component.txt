@@ -1,0 +1,10 @@
+<!--HTML para el componente hijo tarea -->
+
+<div class="card" style="width: 12rem;">
+  <div class="card-body">
+    <h5 class="card-title">Tarea </h5>         <!-- Id de la tarea -->
+    <p class="card-text">       </p>	       <!-- nombre de la tarea -->
+    <p class="card-text">       </p>           <!-- estado de la tarea -->
+    <button  class="btn btn-danger">Borrar</button>
+  </div>
+</div>

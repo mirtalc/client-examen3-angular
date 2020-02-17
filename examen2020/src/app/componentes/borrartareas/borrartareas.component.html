@@ -1,0 +1,10 @@
+<!--HTML para el componente padre borrarTareas.component -->
+
+<br>
+<h3>Listado de Tareas (borrarTareas)</h3>
+<div class="row align-items-stretch justify-content-start card-deck">
+  <app-tarea  *ngFor="let tareaPadre of arrayTareas"
+              [tareaHijo]="tareaPadre"
+              (emitterHijo)="borrar($event)"></app-tarea>
+
+</div>

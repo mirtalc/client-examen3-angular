@@ -1,0 +1,11 @@
+<!-- HTML del componente finalizarTarea -->
+
+<br>
+<h3> Fin de la Tarea </h3>                        <!-- Poner id de la tarea -->
+<div class="alert alert-dark" role="alert">
+    <br>                                          <!-- Poner nombre de la tarea -->
+     <div class="text-center">
+        <button class="btn btn-danger">Finalizar</button> &nbsp;
+        <button class="btn btn-primary">Cancelar</button>
+    </div>
+</div>
