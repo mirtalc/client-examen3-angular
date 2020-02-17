@@ -16,8 +16,8 @@ export class TareaComponent implements OnInit {
   ngOnInit() {
   }
 
-  detectar(event){
-    console.log("Evento normal que ha causado esto", event);
+  detectar(event) {
     this.emitterHijo.emit(this.tareaHijo.id);
+    console.log("Evento normal de DOM que ha causado esto", event);
   }
 }
